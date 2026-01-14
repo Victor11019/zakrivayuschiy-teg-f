@@ -1,24 +1,24 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-   --main-font: "Inter-Variable", sans-serif;
-   --main-font-heading: bold;
-   --main-font-text: normal;
-   --accent-font: "PressStart2P-Regular", serif;
+   --main-font: "Inter";
+   --main-font-heading: 715;
+   --main-font-text: 410;
+   --accent-font: "PressStart2P";
    --accent-color: #000000;
    --background-gradient:
-   repeating-linear-gradient(to right, rgb(211, 211, 211) 2px,  rgb(211, 211, 211, 0) 2px),
-   repeating-linear-gradient(to bottom, rgb(211, 211, 211) 2px,  rgb(211, 211, 211, 0) 2px),
-   repeating-linear-gradient(to bottom, #e7e7e7, #1a1a1a);
-   --block-width: clamp(375px, 70%, 700px);
+      repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+      repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+      linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+   --desktop-width: clamp(375px, 70%, 700px);
    --label-text-stroke: #FFFFFF;
    --contour-color: #000000;
    --animation-fill-color: #FF0000; 
 }
 
-@media (width <= 375px) {
+@media (max-width: 375px) {
    
    :root {
-      --block-width: clamp(0px, 50%, 375px);
+      --mobile-width: clamp(0px, 50%, 375px);
    }
 
 }

@@ -9,39 +9,36 @@
         <link rel="stylesheet" href="./styles/globals.css" />
         <link rel="stylesheet" href="./styles/style.css" />
         <link rel="stylesheet" href="./styles/animations.css" />
+        <link rel="icon" href="./images/ICO/favicon.ico" sizes="any" />
+        <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="./images/PNG/favicon.png" />
     </head>
     <body class="page">
         <header class="header block">
-            <div class="header__logo-group">
-                <h1 class="header__logo">&lt;/HTML&gt;</h1>
-                <h2 class="header__title">закрывающий тег</h2>
-            </div>
+            <h1 class="header__logo">&lt;/html&gt;</h1>
+            <h2 class="header__title">закрывающий тег</h2>
         </header>
-        <main>
-            <section class="preparation">
-                <article class="card block">
-                    <h3 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h3>
-                    <div class="card__image">
-                        <span class="card__label">страх</span>
-                        <img
-                            class="card__picture fear"
-                            src="./images/PNG/1440/image_1.png"
-                            loading="lazy"
-                            alt="фургон"
-                        />
-                    </div>
+        <main class="main">
+            <article class="card block">
+                <h3 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h3>
+                <div class="card__image">
+                    <span class="card__label" aria-hidden="true">страх</span>
+                    <img
+                        class="card__picture filter-grayscale"
+                        src="./images/PNG/1440/image_1.png"
+                        loading="lazy"
+                        alt="фургон"
+                    />
+                </div>
                     <p class="card__paragraph">
                         Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на
                         учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
                     </p>
                     <p class="card__paragraph">
-                        Могу сказать, что на курсы по фронтенд-разработке в Яндекс.Практикуме я пришел не с нуля. Моей
-                        целью было (и остается) добавление в портфолио 9 проектных работ. Поскольку 3 самодеятельтельных
-                        проекта к этому моменту мною уже были сделаны, мне важно получить опыт (и сами проекты) в
-                        профессиональной разработке.
+                        Место для ваших воспоминаний о начале обучения. 
                     </p>
                     <div class="card__buttons">
-                        <button class="card__icon-button">
+                        <button class="card__icon-button" type="button" aria-label="нажать на сердечко">
                             <svg
                                 class="like-icon is-liked"
                                 tabindex="0"
@@ -49,6 +46,7 @@
                                 height="36"
                                 fill="none"
                                 viewBox="0 0 39 36"
+                                aria-hidden="true"
                             >
                                 <g class="heart">
                                     <path
@@ -74,19 +72,17 @@
                                 />
                             </svg>
                         </button>
-                        <button class="card__like-button">
+                        <button class="button card__like-button" type="button">
                             <span class="button__text">Like</span>
                         </button>
                     </div>
                 </article>
-            </section>
-            <section class="clean_sheet">
                 <article class="card block">
                     <h3 class="card__title">1 спринт: Я — чистый лист</h3>
                     <div class="card__image">
-                        <span class="card__label">адаптация</span>
+                        <span class="card__label" aria-hidden="true">адаптация</span>
                         <img
-                            class="card__picture adaptation"
+                            class="card__picture filter-contrast"
                             src="./images/PNG/1440/image_2.png"
                             loading="lazy"
                             alt="фургон"
@@ -99,13 +95,10 @@
                         сложно? что, если я не справлюсь?
                     </p>
                     <p class="card__paragraph">
-                        При подготовке первой проектной работы, если и возникали сложности, то они особо не были
-                        критичными. Может быть на это повлияло самостоятельное изучение мною HTML и CSS? Здесь очень
-                        помог (и помогает) урок Проектная работа в интерактивном учебнике, который не дает верстать
-                        вслепую.
+                        Место для ваших воспоминаний о начале первого спринта.
                     </p>
                     <div class="card__buttons">
-                        <button class="card__icon-button">
+                        <button class="card__icon-button" type="button" aria-label="нажать на сердечко">
                             <svg
                                 class="like-icon is-liked"
                                 tabindex="0"
@@ -113,6 +106,7 @@
                                 height="36"
                                 fill="none"
                                 viewBox="0 0 39 36"
+                                aria-hidden="true"
                             >
                                 <g class="heart">
                                     <path
@@ -138,7 +132,7 @@
                                 />
                             </svg>
                         </button>
-                        <button class="card__like-button">
+                        <button class="button card__like-button" type="button">
                             <span class="button__text">Like</span>
                         </button>
                     </div>
@@ -146,9 +140,9 @@
                 <article class="card block">
                     <h3 class="card__title">1 спринт: А если не получится?</h3>
                     <div class="card__image">
-                        <span class="card__label">попытка вникнуть</span>
+                        <span class="card__label" aria-hidden="true">попытка вникнуть</span>
                         <img
-                            class="card__picture understand"
+                            class="card__picture filter-hue-rotate"
                             src="./images/PNG/1440/image_3.png"
                             loading="lazy"
                             alt="фургон"
@@ -159,11 +153,10 @@
                         смениться ожиданием провала. Или вы, наоборот, могли вдохновиться успехами и поверить в себя.
                     </p>
                     <p class="card__paragraph">
-                        На первой неделе 1 спринта, я изучал 0 спринт. И поэтому, можно сказать, отстал. Сдал первую
-                        проектную работу позже мягкого дедлайна.
+                        Место для ваших воспоминаний об окончании первого спринта.
                     </p>
                     <div class="card__buttons">
-                        <button class="card__icon-button">
+                        <button class="card__icon-button" type="button" aria-label="нажать на сердечко">
                             <svg
                                 class="like-icon is-liked"
                                 tabindex="0"
@@ -171,6 +164,7 @@
                                 height="36"
                                 fill="none"
                                 viewBox="0 0 39 36"
+                                aria-hidden="true"
                             >
                                 <g class="heart">
                                     <path
@@ -196,19 +190,17 @@
                                 />
                             </svg>
                         </button>
-                        <button class="card__like-button">
+                        <button class="button card__like-button" type="button">
                             <span class="button__text">Like</span>
                         </button>
                     </div>
                 </article>
-            </section>
-            <section class="ideal">
                 <article class="card block">
                     <h3 class="card__title">2 спринт: Погоня за идеалом</h3>
                     <div class="card__image">
-                        <span class="card__label">суета</span>
+                        <span class="card__label" aria-hidden="true">суета</span>
                         <img
-                            class="card__picture fuss"
+                            class="card__picture filter-sepia"
                             src="./images/PNG/1440/image_4.png"
                             loading="lazy"
                             alt="фургон"
@@ -221,11 +213,10 @@
                         сделать.
                     </p>
                     <p class="card__paragraph">
-                        Вторая проектная работа, хоть и была местами сложнее первой, стала для меня новым взглядом на
-                        верстку. Этому послужила необычная концепция окон.
+                        Место для ваших воспоминаний о начале второго спринта.
                     </p>
                     <div class="card__buttons">
-                        <button class="card__icon-button">
+                        <button class="card__icon-button" type="button" aria-label="нажать на сердечко">
                             <svg
                                 class="like-icon is-liked"
                                 tabindex="0"
@@ -233,6 +224,7 @@
                                 height="36"
                                 fill="none"
                                 viewBox="0 0 39 36"
+                                aria-hidden="true"
                             >
                                 <g class="heart">
                                     <path
@@ -258,7 +250,7 @@
                                 />
                             </svg>
                         </button>
-                        <button class="card__like-button">
+                        <button class="button card__like-button" type="button">
                             <span class="button__text">Like</span>
                         </button>
                     </div>
@@ -266,9 +258,9 @@
                 <article class="card block">
                     <h3 class="card__title">2 спринт: О тех, кто рядом</h3>
                     <div class="card__image">
-                        <span class="card__label">спешка</span>
+                        <span class="card__label" aria-hidden="true">спешка</span>
                         <img
-                            class="card__picture rush"
+                            class="card__picture filter-opacity"
                             src="./images/PNG/1440/image_5.png"
                             loading="lazy"
                             alt="фургон"
@@ -281,12 +273,10 @@
                         рядом есть единомышленники, не правда ли?
                     </p>
                     <p class="card__paragraph">
-                        В этом спринте мне удалось уложиться к жесткому дедлайну (и таким образом догнать). Огромную
-                        роль в этом сыграла текущая и дальнейшая помощь куратора 52 когорты Ольги Захаровой, а также
-                        консультации наставника Юрия Амбарцумяна. Очень благодарен им за оказанную поддержку.
+                        Место для ваших воспоминаний об окончании второго спринта.
                     </p>
                     <div class="card__buttons">
-                        <button class="card__icon-button">
+                        <button class="card__icon-button" type="button" aria-label="нажать на сердечко">
                             <svg
                                 class="like-icon is-liked"
                                 tabindex="0"
@@ -294,6 +284,7 @@
                                 height="36"
                                 fill="none"
                                 viewBox="0 0 39 36"
+                                aria-hidden="true"
                             >
                                 <g class="heart">
                                     <path
@@ -319,19 +310,17 @@
                                 />
                             </svg>
                         </button>
-                        <button class="card__like-button">
+                        <button class="button card__like-button" type="button">
                             <span class="button__text">Like</span>
                         </button>
                     </div>
                 </article>
-            </section>
-            <section class="workaround_strategies">
                 <article class="card block">
                     <h3 class="card__title">3 спринт: Обходные стратегии</h3>
                     <div class="card__image">
-                        <span class="card__label">облегчение</span>
+                        <span class="card__label" aria-hidden="true">облегчение</span>
                         <img
-                            class="card__picture easement"
+                            class="card__picture filter-invert"
                             src="./images/PNG/1440/image_6.png"
                             loading="lazy"
                             alt="фургон"
@@ -342,11 +331,10 @@
                         решения просто иссякли. Значит, пришло время посмотреть на задачу под другим углом.
                     </p>
                     <p class="card__paragraph">
-                        Выполнение проектной работы на третьем спринте явилось серьезным вызовом для меня. Благодаря
-                        этому я смог хорошо усвоить новые знания и закрепить навыки, полученные из предыдущих спринтов.
+                        Место для ваших воспоминаний о начале третьего спринта.
                     </p>
                     <div class="card__buttons">
-                        <button class="card__icon-button">
+                        <button class="card__icon-button" type="button" aria-label="нажать на сердечко">
                             <svg
                                 class="like-icon is-liked"
                                 tabindex="0"
@@ -354,6 +342,7 @@
                                 height="36"
                                 fill="none"
                                 viewBox="0 0 39 36"
+                                aria-hidden="true"
                             >
                                 <g class="heart">
                                     <path
@@ -379,7 +368,7 @@
                                 />
                             </svg>
                         </button>
-                        <button class="card__like-button">
+                        <button class="button card__like-button" type="button">
                             <span class="button__text">Like</span>
                         </button>
                     </div>
@@ -387,7 +376,7 @@
                 <article class="card block">
                     <h3 class="card__title">3 спринт: Когда опускаются руки</h3>
                     <div class="card__image">
-                        <span class="card__label">истерика</span>
+                        <span class="card__label" aria-hidden="true">истерика</span>
                         <img class="card__picture" src="./images/PNG/1440/image_7.png" loading="lazy" alt="фургон" />
                     </div>
                     <p class="card__paragraph">
@@ -395,13 +384,11 @@
                         пора сдавать, и задачи хочется порешать, и в теории получше разобраться, и жизнь не забыть
                         пожить. В такие моменты очень нужна концентрация. Вспомните, откуда вы её черпали.
                     </p>
-                    <p class="card__paragraph">
-                        Чтобы была концентрация и не пропадала мотивация, необходимо периодически отвлекаться или делать
-                        перерывы. Хорошими помошниками здесь являются прогулки на свежем воздухе и занятия спортом.
-                        Лично мне они хорошо служат, помогая не выгореть ещё на стадии учебы.
+                    <p class="card__paragraph"> 
+                        Место для ваших воспоминаний об окончании третьего спринта.
                     </p>
                     <div class="card__buttons">
-                        <button class="card__icon-button">
+                        <button class="card__icon-button" type="button" aria-label="нажать на сердечко">
                             <svg
                                 class="like-icon is-liked"
                                 tabindex="0"
@@ -409,6 +396,7 @@
                                 height="36"
                                 fill="none"
                                 viewBox="0 0 39 36"
+                                aria-hidden="true"
                             >
                                 <g class="heart">
                                     <path
@@ -434,19 +422,17 @@
                                 />
                             </svg>
                         </button>
-                        <button class="card__like-button">
+                        <button class="button card__like-button" type="button">
                             <span class="button__text">Like</span>
                         </button>
                     </div>
                 </article>
-            </section>
-            <section class="now">
                 <article class="card block">
                     <h3 class="card__title">«Сейчас я здесь»</h3>
                     <div class="card__image">
-                        <span class="card__label">активная работа</span>
+                        <span class="card__label" aria-hidden="true">активная работа</span>
                         <img
-                            class="card__picture active_work"
+                            class="card__picture filter-h-r-c"
                             src="./images/PNG/1440/image_8.png"
                             loading="lazy"
                             alt="фургон"
@@ -458,13 +444,11 @@
                         целый мир. И этот мир постоянно меняется. Познать его полностью не получится, но это тот случай,
                         когда важен сам процесс познания. Ведь часто путь — и есть результат.
                     </p>
-                    <p class="card__paragraph">
-                        В настоящее время я работаю над четвертой проектной работой. Знания, полученные при прохождении
-                        предыдущих спринтов (особенно при выполнении третьей проектной работы), позволяют более глубже
-                        осваивать новые темы по верстке, способствуя достижению цели обучения.
+                    <p class="card__paragraph"> 
+                        Место, чтобы остановиться, подумать и написать, что вы чувствуете в этой точке пути. 
                     </p>
                     <div class="card__buttons">
-                        <button class="card__icon-button">
+                        <button class="card__icon-button" type="button" aria-label="нажать на сердечко">
                             <svg
                                 class="like-icon is-liked"
                                 tabindex="0"
@@ -472,6 +456,7 @@
                                 height="36"
                                 fill="none"
                                 viewBox="0 0 39 36"
+                                aria-hidden="true"
                             >
                                 <g class="heart">
                                     <path
@@ -497,31 +482,30 @@
                                 />
                             </svg>
                         </button>
-                        <button class="card__like-button">
+                        <button class="button card__like-button" type="button">
                             <span class="button__text">Like</span>
                         </button>
                     </div>
                 </article>
-            </section>
+                <div class="block-button">
+                  <button
+                    class="button open_button"
+                    type="button"
+                    onclick="window['dialog-id'].showModal()"
+                    aria-controls="dialog-id"
+                >
+                  <svg width="21" height="21"><use href="./svg/floppy-little.svg"></use></svg>
+                  <span class="button__text">Сохранить на память</span>
+                 </button>
+                </div>
         </main>
-        <footer>
-            <button
-                class="footer__open_button"
-                type="button"
-                onclick="window['dialog-id'].showModal()"
-                aria-controls="dialog-id"
-            >
-                <svg width="21" height="21"><use href="svg/floppy-little.svg"></use></svg>
-                <span class="button__text">Сохранить на память</span>
-            </button>
-        </footer>
         <dialog id="dialog-id">
             <div class="dialog__icon">
-                <svg width="39" height="39"><use href="svg/floppy-big.svg" /></svg>
-                <span class="button__text">ВСТАВЬТЕ <br />ДИСКЕТУ, ЧТОБЫ <br />ПРОДОЛЖИТЬ</span>
+                <svg width="39" height="39"><use href="./svg/floppy-big.svg" /></svg>
+                <p class="dialog__text">вставьте <br />дискету, чтобы <br />продолжить</p>
             </div>
             <button
-                class="dialog__close_button"
+                class="button dialog__close_button"
                 type="button"
                 onclick="window['dialog-id'].close()"
                 aria-controls="dialog-id"
