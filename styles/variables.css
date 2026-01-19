@@ -15,10 +15,11 @@
    --animation-fill-color: #FF0000; 
 }
 
-@media (max-width: 375px) {
+@media (width <= 374px) {
    
    :root {
-      --mobile-width: clamp(0px, 50%, 375px);
+      --mobile-width: clamp(1px, 99%, 374px);
+      --open-button-width: clamp(1px, 100%, 306px);
    }
 
 }
