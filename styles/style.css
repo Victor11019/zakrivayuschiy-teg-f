@@ -61,11 +61,10 @@
 .card {
   display: grid;
   grid-template-columns: 1fr;
-  position: relative;
   outline: 2px solid #000000;
   padding-block-start: 4px;
   justify-self: center;
-  margin-block-end: 45px;
+  margin-block-end: 42px;
 }
 
 .card__title {
@@ -80,11 +79,8 @@
   margin-inline-start: 12px;
 }
 
-.card__picture {
-  width: 100%;
-  margin-block-end: 15px;
-  border-block-start: 2px solid #000000;
-  border-block-end: 2px solid #000000;
+.card__image {
+  position: relative;
 }
 
 .card__label {
@@ -102,7 +98,7 @@
   color: #000;
   text-shadow: 0 0 9px var(--label-text-stroke);
   right: 25px;
-  top: 57px;
+  top: 28px;
   z-index: 1;
 }
 
@@ -112,6 +108,13 @@
     text-shadow: none; 
   } 
 } 
+
+.card__picture {
+  width: 100%;
+  margin-block-end: 18px;
+  border-block-start: 2px solid #000000;
+  border-block-end: 2px solid #000000;
+}
 
 .card__paragraph {
   font-family: var(--main-font), sans-serif;
@@ -125,12 +128,17 @@
 }
 
 .card__icon-button {
+  display: grid;
+  grid-template-columns: repeat(1, min-content);
+  grid-template-rows: repeat(1, min-content);
+  justify-content: center;
+  align-content: center;
   width: 39px;
   height: 36px;
   background-color: transparent;
   border: 2px solid transparent;
-  justify-self: right; 
-  margin-inline-end: 172px;         
+  justify-self: right;  
+  margin-inline-end: 163px;  
 }    
 
 .card__icon-button:focus {
@@ -138,8 +146,8 @@
 }
 
 .card__icon-button:focus-visible {
-  border-color: var(--accent-color); 
-  transition: border-color 0.3s linear;
+  border: 2px solid var(--accent-color); 
+  transition: border 0.3s linear;
 }
 
 .like-icon {
@@ -147,6 +155,10 @@
   border: 2px solid transparent;
   transition: transform 0.3s ease;
   cursor: pointer;
+}
+
+.like-icon:focus {
+  outline: none;
 }
 
 .like-icon.is-liked .heart {
@@ -287,7 +299,7 @@
   height: 38px;
   margin-inline-end: 25px;
   justify-self: right;
-  bottom: 30px;
+  bottom: 32px;
 }
 
 .button__text {
@@ -306,24 +318,14 @@
 }
 
 .open__button {
-  width: clamp(19.125rem, 18.4866rem + 2.7238vw, 20.938rem);
-  padding-block: 13px;
-  padding-inline: 19px;
   margin-block-end: 100px;
-}
-
-.open_button .button__text {
-  vertical-align: middle;
-  white-space: nowrap;
 }
 
 .open__button_icon {
   color: #000;
-  width: 21px;
-  height: 21px;
 }
 
-.dialog-id {
+.dialog {
   border: 2px solid #000000;
   background-color: #FFFFFF;
   padding: 30px;
@@ -356,15 +358,12 @@
 .dialog__close_button {
   min-width: 293px; 
   min-height: 38px;
+  text-transform: uppercase;
 }
 
 dialog::backdrop {
   background-color: #000000;
   opacity: 75%;
-}
-
-.dialog__icon .button__text {
-  text-transform: uppercase;
 }
 
 @media (width <= 374px) {
@@ -378,7 +377,7 @@ dialog::backdrop {
   }
 
   .card {
-    margin-block-end: 44px;
+    margin-block-end: 42px;
   }
 
   .card__title {
@@ -386,31 +385,63 @@ dialog::backdrop {
   }
 
   .card__label {
-    top: 60px;
-    right: 30px;
+    top: 25px;
+    right: 25px;
   }
 
   .card__picture {
-    margin-block-end: 21px;
+    margin-block-end: 19px;
   }
 
   .card__paragraph {
-    margin-block-end: 22px;
+    margin-block-end: 24px;
   }
+
+  .dialog {
+    padding-inline: 40px;
+  }
+
+  .dialog__close_button {
+    min-width: 261px;
+  }
+} 
+
+@media (min-width: 375px) {
 
   .open__button {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    white-space: nowrap;
-    padding-block-start: 15px;
-    padding-block-end: 5px;
+    grid-template-columns: 1fr;
     row-gap: 8px;
+    width: clamp(1rem, 0.9515rem + 77.5401vw, 19.125rem);
+    padding-block: clamp(1rem, 0.9998rem + 0.2695vw, 1.063rem);
   }
 
   .open__button_icon {
+    justify-self: center;
     width: 28px;
     height: 28px;
-    justify-self: center;
+}
+
+}
+
+@media (min-width: 1440px) {
+  
+  .open__button {
+    display: flex;
+    flex-direction: row;
+    width: clamp(19.125rem, 18.4866rem + 2.7238vw, 20.938rem);
+    padding-block: clamp(1.063rem, 1.0412rem + 0.0931vw, 1.125rem);
+    padding-inline: 20px;
   }
 
-} 
+  .open__button_icon {
+    width: 21px;
+    height: 21px;
+    margin-inline-end: 4px;
+}
+
+  .open__button .block-button {
+    vertical-align: middle;
+  }
+
+}

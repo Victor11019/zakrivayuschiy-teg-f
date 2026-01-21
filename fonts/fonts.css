@@ -3,9 +3,8 @@
 @font-face {
   font-family: "PressStart2P";
   src:
-    local("PressStart2P"), 
-    url("../fonts/PressStart2P.woff") format("woff"),
-    url("../fonts/PressStart2P.woff2") format("woff2");
+    local("PressStart2P"),
+    url("../fonts/PressStart2P.woff") format("woff");
   font-display: swap;
 }
 
@@ -15,7 +14,6 @@
   src: 
     local("Inter"),
     url("../fonts/Inter.woff2") format("woff2"),
-    url("../fonts/Inter.woff") format("woff"),
     url("./fonts/Inter.woff") format("woff2 supports variations"),
     url("./fonts/Inter.woff") format("woff2-variations");
 }
